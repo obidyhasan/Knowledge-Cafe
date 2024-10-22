@@ -12,9 +12,9 @@ function Blogs() {
   }, []);
 
   return (
-    <div className="sm:col-span-2 bg-gray-200">
+    <div className="sm:col-span-2">
       {blogs.map((blog, idx) => (
-        <Blog key={idx}></Blog>
+        <Blog key={idx} blog={blog}></Blog>
       ))}
     </div>
   );
