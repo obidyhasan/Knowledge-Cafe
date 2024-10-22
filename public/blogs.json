@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "cover_img": "https://i.ibb.co.com/gzxHRRg/2.png",
+    "author_name": "John Doe",
+    "author_img": "https://i.ibb.co.com/ZKg98qb/Ellipse-1-1.png",
+    "publish_date": "2024-10-01",
+    "read_time": 5,
+    "title": "The Future of Web Development",
+    "tags": ["web development", "technology", "future"]
+  },
+  {
+    "id": 2,
+    "cover_img": "https://i.ibb.co.com/VJ7bgzX/Rectangle-1-1.png",
+    "author_name": "Jane Smith",
+    "author_img": "https://i.ibb.co.com/G0Q0HcM/Ellipse-1-2.png",
+    "publish_date": "2024-09-25",
+    "read_time": 7,
+    "title": "10 Tips for Better UI/UX Design",
+    "tags": ["UI/UX", "design", "tips"]
+  },
+  {
+    "id": 3,
+    "cover_img": "https://i.ibb.co.com/5c7zGFh/Rectangle-1.png",
+    "author_name": "Michael Lee",
+    "author_img": "https://i.ibb.co.com/jHdFwXp/profile.png",
+    "publish_date": "2024-09-15",
+    "read_time": 6,
+    "title": "Understanding JavaScript Closures",
+    "tags": ["JavaScript", "programming", "closures"]
+  },
+  {
+    "id": 4,
+    "cover_img": "https://i.ibb.co.com/McKQPCs/1.jpg",
+    "author_name": "Emma Johnson",
+    "author_img": "https://i.ibb.co.com/wBS4vmS/Ellipse-1.png",
+    "publish_date": "2024-09-05",
+    "read_time": 8,
+    "title": "The Importance of SEO for Your Website",
+    "tags": ["SEO", "marketing", "website"]
+  },
+  {
+    "id": 5,
+    "cover_img": "https://i.ibb.co.com/YL8c22Z/4.jpg",
+    "author_name": "Chris Martinez",
+    "author_img": "https://i.ibb.co.com/ZKg98qb/Ellipse-1-1.png",
+    "publish_date": "2024-08-20",
+    "read_time": 4,
+    "title": "Getting Started with Tailwind CSS",
+    "tags": ["CSS", "Tailwind", "frontend"]
+  }
+]
