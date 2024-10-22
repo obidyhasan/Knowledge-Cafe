@@ -1,8 +1,13 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 import { FaRegBookmark } from "react-icons/fa6";
+import { IoBookmark } from "react-icons/io5";
 
-function Blog({ blog }) {
+function Blog({ blog, handelBookmark, handelMarkAsRead }) {
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
   const {
+    id,
     cover_img,
     title,
     author_name,
@@ -31,8 +36,12 @@ function Blog({ blog }) {
 
         <div className="flex items-center gap-2">
           <p>{read_time} min read</p>
-          <button>
-            <FaRegBookmark />
+          <button
+            onClick={() => {
+              handelBookmark(blog), setIsBookmarked(!isBookmarked);
+            }}
+          >
+            {isBookmarked ? <IoBookmark /> : <FaRegBookmark />}
           </button>
         </div>
       </div>
@@ -42,7 +51,10 @@ function Blog({ blog }) {
           <span key={index}>#{tag}</span>
         ))}
       </div>
-      <button className="font-semibold underline text-purple-500 mb-7 mt-3">
+      <button
+        onClick={() => handelMarkAsRead(blog, id)}
+        className="font-semibold underline text-purple-500 mb-7 mt-3"
+      >
         Mark as read
       </button>
     </div>
@@ -51,6 +63,8 @@ function Blog({ blog }) {
 
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
+  handelBookmark: PropTypes.func.isRequired,
+  handelMarkAsRead: PropTypes.func.isRequired,
 };
 
 export default Blog;
